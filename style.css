@@ -1,0 +1,297 @@
+/* fonts */
+@font-face {
+  font-family: 'Fira Sans Regular';
+  src: url('fonts/FiraSans-Regular.eot');
+  src: url('fonts/FiraSans-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/FiraSans-Regular.woff2') format('woff2'), url('fonts/FiraSans-Regular.woff') format('woff'), url('fonts/FiraSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans Bold';
+  src: url('fonts/FiraSans-Bold.eot');
+  src: url('fonts/FiraSans-Bold.eot?#iefix') format('embedded-opentype'), url('fonts/FiraSans-Bold.woff2') format('woff2'), url('fonts/FiraSans-Bold.woff') format('woff'), url('fonts/FiraSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Fira Sans Italic';
+  src: url('fonts/FiraSans-Italic.eot');
+  src: url('fonts/FiraSans-Italic.eot?#iefix') format('embedded-opentype'), url('fonts/FiraSans-Italic.woff2') format('woff2'), url('fonts/FiraSans-Italic.woff') format('woff'), url('fonts/FiraSans-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+/* mixins */
+/* variables */
+/* basics */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Fira Sans Regular', sans-serif;
+  color: #333333;
+  font-size: 16px;
+}
+a {
+  text-decoration: none;
+}
+.header .container {
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.section {
+  padding-top: 60px;
+}
+.section .container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* header */
+.header {
+  background: url(img/header-bg.png) center top no-repeat;
+}
+.upper-header {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+}
+.upper-header .logo {
+  margin-right: 76px;
+}
+.upper-header .upper-header__info {
+  display: flex;
+  padding-bottom: 26px;
+  padding-top: 11px;
+  border-bottom: 1px solid #CCCCCC;
+}
+.upper-header .upper-header__info .language {
+  margin-right: 52px;
+  color: #999999;
+}
+.upper-header .upper-header__info .language .language__btn {
+  border: none;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #999999;
+  outline: none;
+  font-family: 'Fira Sans Regular', sans-serif;
+}
+.upper-header .upper-header__info .language .language__btn:hover {
+  cursor: pointer;
+}
+.upper-header .upper-header__info .language .active {
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #333333;
+}
+.upper-header .upper-header__info .prices {
+  color: #999999;
+  margin-right: 46px;
+}
+.upper-header .upper-header__info .prices .underline-price {
+  text-decoration: underline;
+  color: #333333;
+}
+.upper-header .upper-header__info .phone-number {
+  margin-left: 28px;
+  color: #999999;
+}
+.upper-header .upper-header__info .phone-number .bold-number {
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #333333;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.upper-header .upper-header__info .phone-number .free-call {
+  position: absolute;
+  font-size: 14px;
+  transform: translateX(92px);
+}
+.upper-header .upper-header__info .consultation-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 46px;
+  background-color: #0C4DA2;
+  color: #fff;
+  border-radius: 6px;
+  margin-left: 30px;
+  transition: all 0.2s;
+  margin-right: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.upper-header .upper-header__info .consultation-btn:hover {
+  transition: all 0.2s;
+  background-color: #003F90;
+  cursor: pointer;
+}
+.lower-header {
+  display: flex;
+  align-items: center;
+  padding-top: 26px;
+  padding-bottom: 30px;
+}
+.lower-header .title {
+  text-transform: uppercase;
+  font-family: 'Fira Sans Bold', sans-serif;
+  font-size: 32px;
+}
+.lower-header .nav {
+  display: flex;
+  align-items: center;
+  margin-left: 56px;
+  text-transform: uppercase;
+}
+.lower-header .nav .nav-link {
+  margin-right: 30px;
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #333333;
+}
+.lower-header .nav .first:after {
+  content: '|';
+  margin-left: 13px;
+  color: #CCCCCC;
+  position: absolute;
+  cursor: default;
+  font-family: 'Fira Sans Regular', sans-serif;
+}
+.lower-header .nav .grey {
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #999999;
+  margin-left: 10px;
+}
+.lower-header .nav .last {
+  margin-left: 50px;
+}
+.lower-header .nav .my-file {
+  width: 136px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Fira Sans Bold', sans-serif;
+}
+.lower-header .nav .my-file a {
+  color: #0C4DA2;
+}
+.lower-header .nav .my-file .counter {
+  background-color: #0C4DA2;
+  border-radius: 100px;
+  color: #fff;
+  font-family: 'Fira Sans Regular', sans-serif;
+  font-size: 14px;
+  padding: 4px 5px;
+}
+/* section 1*/
+.sec1 {
+  position: relative;
+}
+.blue-square {
+  position: absolute;
+  width: 960px;
+  height: 530px;
+  background-color: rgba(12, 77, 162);
+  opacity: 0.07;
+  transform: translateX(-15.5%) translateY(130%);
+}
+.wrapper {
+  display: flex;
+}
+.wrapper .side-bar .side-bar__menu {
+  box-shadow: 0px 0px 18px rgba(171, 171, 175, 0.45);
+  border-radius: 15px;
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #333333;
+}
+.wrapper .side-bar .side-bar__menu .side-bar__item {
+  display: flex;
+  align-items: center;
+  width: 290px;
+  height: 58px;
+  color: #333333;
+  padding-left: 15px;
+  transition: all 0.2s;
+}
+.wrapper .side-bar .side-bar__menu .side-bar__item:hover {
+  transition: all 0.2s;
+  color: #0C4DA2;
+  background-color: rgba(12, 77, 162, 0.07);
+}
+.wrapper .side-bar .side-bar__menu .side-bar__item:first-child {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.wrapper .side-bar .side-bar__menu .side-bar__item:last-child {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+.wrapper .side-bar .side-bar__buttons {
+  margin-top: 20px;
+}
+.wrapper .side-bar .side-bar__buttons .buttons__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 290px;
+  height: 46px;
+  color: #0C4DA2;
+  background-color: rgba(12, 77, 162, 0.2);
+  border-radius: 6px;
+  font-family: 'Fira Sans Bold', sans-serif;
+  transition: all 0.2s;
+}
+.wrapper .side-bar .side-bar__buttons .buttons__item:last-child {
+  margin-top: 10px;
+}
+.wrapper .side-bar .side-bar__buttons .buttons__item:hover {
+  transition: all 0.2s;
+  background-color: rgba(12, 77, 162, 0.3);
+}
+.wrapper .side-bar .side-bar__under {
+  width: 290px;
+  height: 838px;
+  background-color: #0c4da2;
+  margin-top: 24px;
+  opacity: 0.2;
+}
+.wrapper .right-side {
+  width: 100%;
+}
+.wrapper .right-side .slider {
+  position: relative;
+}
+.wrapper .right-side .slider #left {
+  position: absolute;
+  top: 43%;
+  left: 3%;
+  z-index: 100;
+}
+.wrapper .right-side .slider #left:hover {
+  cursor: pointer;
+}
+.wrapper .right-side .slider #right {
+  position: absolute;
+  top: 43%;
+  left: 102.3%;
+  transform: rotate(180deg);
+  z-index: 100;
+}
+.wrapper .right-side .slider #right:hover {
+  cursor: pointer;
+}
+.wrapper .right-side .slider .owl-carousel {
+  max-width: 720px;
+  margin-left: 90px;
+}
+.wrapper .right-side .slider .main .main__title {
+  font-size: 42px;
+  color: #999999;
+  font-family: 'Fira Sans Bold', sans-serif;
+  text-transform: uppercase;
+}
