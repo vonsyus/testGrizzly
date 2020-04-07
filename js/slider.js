@@ -4,7 +4,6 @@ $(document).ready(function() {
         items: 1,
         loop: false,
         margin: 10,
-        dots: true,
         autoWidth: true
     });
 
