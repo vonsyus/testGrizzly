@@ -267,19 +267,12 @@ a {
     position: relative;
 }
 
-.blue-square {
-    position: absolute;
-    width: 960px;
-    height: 530px;
-    background-color: rgba(12, 77, 162);
-    opacity: .07;
-    transform: translateX(-15.5%) translateY(130%);
-}
-
 .wrapper {
     display: flex;
 
     .side-bar {
+        position: relative;
+
         .side-bar__menu {
             box-shadow: 0px 0px 18px rgba(171, 171, 175, 0.45);
             border-radius: 15px;
@@ -340,11 +333,22 @@ a {
         }
     
         .side-bar__under {
+            position: relative;
             width: 290px;
             height: 838px;
             background-color: rgb(12, 77, 162);
             margin-top: 24px;
             opacity: .2;
+        }
+
+        .blue-square {
+            position: absolute;
+            width: 960px;
+            height: 530px;
+            background-color: rgba(12, 77, 162);
+            opacity: .07;
+            margin-top: -550px;
+            margin-left: -135px;
         }
     }
 
@@ -379,14 +383,83 @@ a {
             .owl-carousel {
                 max-width: 720px;
                 margin-left: 90px;
+
+                .owl-dots {
+                    margin-top: 17px;
+                    text-align: center;
+
+                    .owl-dot {
+                        width: 10px;
+                        height: 10px;
+                        border-radius: 50%;
+                        outline: none;
+                        background-color: rgba(12, 77, 162, 0.4);
+                        margin-right: 13px;
+
+                        &:last-child {
+                            margin-right: 0px;
+                        }
+                    }
+
+                    .active {
+                        background-color: @blue;
+                    }
+                }
+            }
+        }
+
+        .main {
+            .main__title {
+                font-size: 42px;
+                color: @grey;
+                .bold();
+                text-transform: uppercase;
+                text-align: center;
+                margin-top: 66px;
+                margin-bottom: 110px;
+                line-height: 140%;
             }
 
-            .main {
-                .main__title {
-                    font-size: 42px;
-                    color: @grey;
-                    .bold();
-                    text-transform: uppercase;
+            .main__advantages {
+                display: flex;
+                align-items: center;
+                position: relative;
+                margin-left: 90px;
+
+                .advantages__points {
+                    .point {
+                        margin-bottom: 40px;
+    
+                        .point__title {
+                            .boldBlack();
+                            font-size: 18px;
+                            text-transform: uppercase;
+                        }
+    
+                        .point__item {
+                            display: flex;
+                            align-items: flex-start;
+                            margin-top: 20px;
+                            width: 288px;
+    
+                            img {
+                                margin-top: 6px;
+                            }
+    
+                            .item__text {
+                                margin-left: 16px;
+                                line-height: 150%;
+    
+                                .bold {
+                                    .boldBlack();
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .advantages__video {
+                    margin-left: 18px;
                 }
             }
         }

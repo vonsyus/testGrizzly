@@ -193,16 +193,11 @@ a {
 .sec1 {
   position: relative;
 }
-.blue-square {
-  position: absolute;
-  width: 960px;
-  height: 530px;
-  background-color: rgba(12, 77, 162);
-  opacity: 0.07;
-  transform: translateX(-15.5%) translateY(130%);
-}
 .wrapper {
   display: flex;
+}
+.wrapper .side-bar {
+  position: relative;
 }
 .wrapper .side-bar .side-bar__menu {
   box-shadow: 0px 0px 18px rgba(171, 171, 175, 0.45);
@@ -256,11 +251,21 @@ a {
   background-color: rgba(12, 77, 162, 0.3);
 }
 .wrapper .side-bar .side-bar__under {
+  position: relative;
   width: 290px;
   height: 838px;
   background-color: #0c4da2;
   margin-top: 24px;
   opacity: 0.2;
+}
+.wrapper .side-bar .blue-square {
+  position: absolute;
+  width: 960px;
+  height: 530px;
+  background-color: rgba(12, 77, 162);
+  opacity: 0.07;
+  margin-top: -550px;
+  margin-left: -135px;
 }
 .wrapper .right-side {
   width: 100%;
@@ -291,9 +296,66 @@ a {
   max-width: 720px;
   margin-left: 90px;
 }
-.wrapper .right-side .slider .main .main__title {
+.wrapper .right-side .slider .owl-carousel .owl-dots {
+  margin-top: 17px;
+  text-align: center;
+}
+.wrapper .right-side .slider .owl-carousel .owl-dots .owl-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  outline: none;
+  background-color: rgba(12, 77, 162, 0.4);
+  margin-right: 13px;
+}
+.wrapper .right-side .slider .owl-carousel .owl-dots .owl-dot:last-child {
+  margin-right: 0px;
+}
+.wrapper .right-side .slider .owl-carousel .owl-dots .active {
+  background-color: #0C4DA2;
+}
+.wrapper .right-side .main .main__title {
   font-size: 42px;
   color: #999999;
   font-family: 'Fira Sans Bold', sans-serif;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 66px;
+  margin-bottom: 110px;
+  line-height: 140%;
+}
+.wrapper .right-side .main .main__advantages {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 90px;
+}
+.wrapper .right-side .main .main__advantages .advantages__points .point {
+  margin-bottom: 40px;
+}
+.wrapper .right-side .main .main__advantages .advantages__points .point .point__title {
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #333333;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.wrapper .right-side .main .main__advantages .advantages__points .point .point__item {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 20px;
+  width: 288px;
+}
+.wrapper .right-side .main .main__advantages .advantages__points .point .point__item img {
+  margin-top: 6px;
+}
+.wrapper .right-side .main .main__advantages .advantages__points .point .point__item .item__text {
+  margin-left: 16px;
+  line-height: 150%;
+}
+.wrapper .right-side .main .main__advantages .advantages__points .point .point__item .item__text .bold {
+  font-family: 'Fira Sans Bold', sans-serif;
+  color: #333333;
+}
+.wrapper .right-side .main .main__advantages .advantages__video {
+  margin-left: 18px;
 }
