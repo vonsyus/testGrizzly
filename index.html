@@ -141,11 +141,81 @@
 
     <section class="section">
         <div class="container">
-            
+            <div class="catalog">
+                <div class="catalog__title">КАТАЛОГ РЕТФРОФИТ-КОМПЛЕКТОВ</div>
+                <div class="catalog__filter">
+                    <div class="filters">
+                        <div class="filter__item">
+                            <div class="item__title">тип станка</div>
+
+                            <div class="checkbox">
+                                <input type="checkbox" id="typefirst">
+                                <label for="typefirst">Фрезерный</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="typesecond">
+                                <label for="typesecond">Токарный</label>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <div class="item__title">модель станка</div>
+
+                            <div class="checkbox">
+                                <label class="brand">Бренд 1</label>
+                                <input type="checkbox" id="modelfirst">
+                                <label for="modelfirst">16М20</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="modelsecond">
+                                <label for="modelsecond">16М30</label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="brand">Бренд 2</label>
+                                <input type="checkbox" id="modelthird">
+                                <label for="modelthird">16М40</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="modelfourth">
+                                <label for="modelfourth">16М50</label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="brand">Бренд 3</label>
+                                <input type="checkbox" id="modelfifth">
+                                <label for="modelfifth">16М60</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="modelsix">
+                                <label for="modelsix">16М70</label>
+                            </div>
+                        </div>
+                        <div class="filter__item">
+                            <div class="item__title">вариант поставки <img src="img/question.png" alt="" class="question"></div>
+                            
+                            <div class="checkbox">
+                                <input type="checkbox" id="variantfirst">
+                                <label for="variantfirst">Модули</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="variantsecond">
+                                <label for="variantsecond">Монтажные панели</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="variantthird">
+                                <label for="variantthird">Электрошкаф</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Поиск">
+                        <button class="clear">Очистить фильтр <img src="img/clear.png" alt=""></button>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/clear-search.js"></script>
 </body>
 </html>
