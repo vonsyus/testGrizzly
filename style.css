@@ -1350,4 +1350,7 @@ a {
     margin-top: 20px;
     justify-content: space-between;
   }
+  .footer__inner {
+    display: none !important;
+  }
 }
