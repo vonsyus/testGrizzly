@@ -4,7 +4,14 @@ $(document).ready(function() {
         items: 1,
         loop: false,
         margin: 10,
-        autoWidth: true
+        responsive: {
+            0: {
+                autoWidth: false            
+            },
+            1170: {
+                autoWidth: true
+            }
+        }
     });
 
     $('#left1').click(function() {
@@ -17,10 +24,18 @@ $(document).ready(function() {
 
     let owl2 = $('#owl2');
     owl2.owlCarousel({
-        items: 3,
         loop: false,
         margin: 22,
-        slideBy: 3
+        responsive: {
+            0: {
+                items: 1,
+                center: true
+            },
+            1170: {
+                items: 3,
+                slideBy: 3
+            }
+        }
     });
 
     $('#left2').click(function() {
@@ -33,9 +48,9 @@ $(document).ready(function() {
 
     let owl3 = $('#owl3');
     owl3.owlCarousel({
-        items: 2,
         loop: false,
         margin: 20,
+        items: 2,
         slideBy: 2
     });
 
@@ -45,5 +60,12 @@ $(document).ready(function() {
 
     $('#right3').click(function() {
         owl3.trigger('next.owl.carousel');
+    });
+
+    let owl4 = $('#owl4');
+    owl4.owlCarousel({
+        loop: false,
+        margin: 20,
+        items: 1
     });
 });

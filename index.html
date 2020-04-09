@@ -20,6 +20,11 @@
                     <img src="img/logo.png" alt="">
                 </div>
 
+                <div class="title mobile">Ретрофит<br>комплекты</div>
+                <div class="menu mobile">
+                    <img src="img/menu.png" alt="">
+                </div>
+
                 <div class="upper-header__info">
                     <div class="language">
                         <button class="language__btn active">рус</button>
@@ -72,13 +77,14 @@
                     </div>
                     <div class="side-bar__buttons">
                         <a href="" class="buttons__item">SITEKGRAM</a>
-                        <a href="" class="buttons__item">ШЕСТЬ способов связаться с нами</a>
+                        <a href="" class="buttons__item">ПЯТЬ способов связаться с нами</a>
                     </div>
                     <div class="side-bar__under"></div>
                     <div class="blue-square"></div>
                 </div>
 
                 <div class="right-side">
+                    <div class="main__title mobile">У вас есть все, чтобы модернизировать старый станок</div>
                     <div class="slider">
                         <div class="slider__nav">
                             <img src="img/slider-arrow.png" alt="" id="left1">
@@ -94,7 +100,7 @@
                         </div>
                     </div>
                     <div class="main">
-                        <div class="main__title">У вас есть все,<br>чтобы модернизировать<br>старый станок</div>
+                        <div class="main__title desktop">У вас есть все,<br>чтобы модернизировать<br>старый станок</div>
 
                         <div class="main__advantages">
                             <div class="advantages__points">
@@ -109,7 +115,7 @@
                                     <div class="point__item">
                                         <img src="img/galochka.png" alt="">
                                         <div class="item__text">
-                                            Штат опытных слесарей и >механиков, способных восстановить станок
+                                            Штат опытных слесарей и механиков, способных восстановить станок
                                         </div>
                                     </div>
                                 </div>
@@ -145,7 +151,73 @@
         <div class="container">
             <div class="catalog">
                 <div class="catalog__title">КАТАЛОГ РЕТФРОФИТ-КОМПЛЕКТОВ</div>
-                <div class="catalog__filter">
+                <div class="catalog__filter mobile ui-widget-content" id="accordion-resizer1">
+                    <div class="filters" id="accordion1">
+                        <h3 class="item__title">тип станка</h3>
+                        <div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="typefirst">
+                                <label for="typefirst">Фрезерный</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="typesecond">
+                                <label for="typesecond">Токарный</label>
+                            </div>
+                        </div>
+                        <h3 class="item__title">модель станка</h3>
+                        <div>
+                            <div class="checkbox">
+                                <label class="brand">Бренд 1</label>
+                                <input type="checkbox" id="modelfirst">
+                                <label for="modelfirst">16М20</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="modelsecond">
+                                <label for="modelsecond">16М30</label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="brand">Бренд 2</label>
+                                <input type="checkbox" id="modelthird">
+                                <label for="modelthird">16М40</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="modelfourth">
+                                <label for="modelfourth">16М50</label>
+                            </div>
+                            <div class="checkbox">
+                                <label class="brand">Бренд 3</label>
+                                <input type="checkbox" id="modelfifth">
+                                <label for="modelfifth">16М60</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="modelsix">
+                                <label for="modelsix">16М70</label>
+                            </div>
+                        </div>
+                        <h3 class="item__title">вариант поставки</h3>
+                        <div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="variantfirst">
+                                <label for="variantfirst">Модули</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="variantsecond">
+                                <label for="variantsecond">Монтажные панели</label>
+                            </div>
+                            <div class="checkbox">
+                                <input type="checkbox" id="variantthird">
+                                <label for="variantthird">Электрошкаф</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__filter mobile">
+                    <div class="search">
+                        <input type="text" class="search__input" placeholder="Поиск">
+                        <button class="clear"><img src="img/clear.png" alt=""></button>
+                    </div>
+                </div>
+                <div class="catalog__filter desktop">
                     <div class="filters">
                         <div class="filter__item">
                             <div class="item__title">тип станка</div>
@@ -216,7 +288,7 @@
                 <div class="catalog__showed">Показано 3 из 9</div>
 
                 <div class="catalog__slider">
-                    <div class="slider__nav">
+                    <div class="slider__nav desktop">
                         <img src="img/slider-arrow.png" alt="" id="left2">
                         <img src="img/slider-arrow.png" alt="" id="right2">
                     </div>
@@ -350,7 +422,121 @@
             <div class="ways">
                 <div class="ways__title">ПЯТЬ способов получить информацию</div>
                 <div class="get-info">
-                    <div id="tabs">
+                    <div class="mobile ui-widget-content" id="accordion-resizer2">
+                        <div id="accordion2">
+                            <h3 class="item__title">01 Мой файл</h3>
+                            <div class="text-content">
+                                <div class="item">
+                                    Cохраняйте все полезные материалы на нашем сайте в один документ, который будет сгенерирован в удобном виде в формате PDF
+                                </div>
+                                <div class="item">
+                                    Помечайте <img src="img/my-file.png" alt=""> необходимые материалы<br>
+                                    <span class="italic">(статьи, изображения, инструкции, новости и.т.д.)</span>
+                                </div>
+                                <div class="item">
+                                    Зайдите в Мой файл и нажмите кнопку “Сгенерировать”
+                                </div>
+                                <div class="item">
+                                    Получите готовый документ на e-mail
+                                </div>
+                                <div class="item">
+                                    Или выберите один из готовых файлов, собранный нашими специалистами по интересующей вас теме
+                                </div>
+                                <div class="btn">
+                                    <img src="img/my-file.png" alt=""> Мой файл
+                                </div>
+                                <div class="slider">
+                                    <div class="owl-carousel" id="owl4">
+                                        <div class="file">
+                                            <div class="file__img">
+                                                <img src="img/file.png" alt="">
+                                            </div>
+                                            <div class="file__title">
+                                                Готовый файл “Продольно-фрезерные станки РАМА”
+                                            </div>
+                                            <div class="file__description">
+                                                И. Иванов,<br>менеджер по продажам 
+                                            </div>
+                                            <div class="file__tags">
+                                                <div class="tag blue">Продольно-фрезерный</div>
+                                                <div class="tag green">Поставка</div>
+                                                <div class="tag orange">РАМА</div>
+                                                <div class="tag blue">...</div>
+                                            </div>
+                                        </div>
+                                        <div class="file">
+                                            <div class="file__img">
+                                                <img src="img/file.png" alt="">
+                                            </div>
+                                            <div class="file__title">
+                                                Готовый файл “Продольно-фрезерные станки РАМА”
+                                            </div>
+                                            <div class="file__description">
+                                                И. Иванов,<br>менеджер по продажам 
+                                            </div>
+                                            <div class="file__tags">
+                                                <div class="tag blue">Продольно-фрезерный</div>
+                                                <div class="tag green">Поставка</div>
+                                                <div class="tag orange">РАМА</div>
+                                                <div class="tag blue">...</div>
+                                            </div>
+                                        </div>
+                                        <div class="file">
+                                            <div class="file__img">
+                                                <img src="img/file.png" alt="">
+                                            </div>
+                                            <div class="file__title">
+                                                Готовый файл “Продольно-фрезерные станки РАМА”
+                                            </div>
+                                            <div class="file__description">
+                                                И. Иванов,<br>менеджер по продажам 
+                                            </div>
+                                            <div class="file__tags">
+                                                <div class="tag blue">Продольно-фрезерный</div>
+                                                <div class="tag green">Поставка</div>
+                                                <div class="tag orange">РАМА</div>
+                                                <div class="tag blue">...</div>
+                                            </div>
+                                        </div>
+                                        <div class="file">
+                                            <div class="file__img">
+                                                <img src="img/file.png" alt="">
+                                            </div>
+                                            <div class="file__title">
+                                                Готовый файл “Продольно-фрезерные станки РАМА”
+                                            </div>
+                                            <div class="file__description">
+                                                И. Иванов,<br>менеджер по продажам 
+                                            </div>
+                                            <div class="file__tags">
+                                                <div class="tag blue">Продольно-фрезерный</div>
+                                                <div class="tag green">Поставка</div>
+                                                <div class="tag orange">РАМА</div>
+                                                <div class="tag blue">...</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <h3 class="item__title">02 Видео 1х1</h3>
+                            <div class="text-content">
+                                Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Обеспечивает по всей вершину, первую своего языком города большой страна журчит. Агентство большого, эта своего продолжил он что выйти семантика деревни переписывается не, меня наш переулка путь имеет грамматики заголовок пунктуация свое lorem сих безорфографичный. Использовало, вопрос текстами снова ему семь пояс? Дороге над дорогу путь правилами алфавит всемогущая рекламных запятых там но напоивший! Свою ipsum снова приставка, жаренные наш составитель коварный бросил продолжил переулка? Которое имеет предупреждал несколько всемогущая вопроса реторический, заглавных грустный вопрос домах безопасную над она одна себя лучше буквоград предупредила власти, заголовок коварных. Точках своего парадигматическая переписали. Запятых раз продолжил безорфографичный рот деревни, если злых! Страна путь одна коварный назад повстречался эта семь! Сбить, своего? Вопроса, проектах имени там выйти лучше единственное последний если, своих это по всей которой заманивший предупредила, ведущими встретил большого гор пояс повстречался пунктуация вопрос. Назад дал деревни жаренные продолжил своего приставка свой рукопись своих, мир коварный последний щеке собрал всемогущая подзаголовок, ее речью выйти за ручеек семь но проектах которое! Агентство, предупредила. Одна то что она до продолжил оксмокс бросил всемогущая все его снова если, пустился запятой обеспечивает несколько рот знаках заманивший щеке большой большого единственное? Ipsum взгляд пор по всей, заглавных диких бросил.
+                            </div class="text-content">
+                            <h3 class="item__title">03 Заказать вебинар</h3>
+                            <div class="text-content">
+                                Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Текста взгляд жаренные о, лучше всемогущая снова вдали пояс реторический от всех, буквоград строчка силуэт журчит использовало свою запятой рукопись языкового. Составитель, путь имени живет встретил что пунктуация обеспечивает деревни языком океана маленькая по всей? Правилами вопроса, своих пояс подпоясал щеке lorem пунктуация пустился дал бросил имени если эта не маленький, взгляд прямо встретил, свой которое коварных безорфографичный до скатился! Запятой заманивший она своего! Предложения текст жизни даже курсивных толку буквенных, свой деревни коварных последний. Лучше оксмокс пунктуация текстами текст возвращайся языкового последний по всей диких одна рыбными семь ее повстречался, букв журчит снова заглавных свой которое взгляд. Живет текстами путь мир, свой вершину заголовок реторический текст он большого лучше алфавит, всеми сбить, себя города взгляд гор возвращайся рукопись на берегу но ведущими рыбными о собрал продолжил предупреждал. Предупредила осталось своего заманивший прямо рукопись свою вершину, скатился, текст текстов дал рот грустный за дороге.
+                            </div>
+                            <h3 class="item__title">04 Сотрудники</h3>
+                            <div class="text-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus minima unde dolorum ducimus cupiditate distinctio nisi sequi placeat voluptates earum nobis, facilis eum quisquam quibusdam consequuntur libero cum quod eius! Accusantium aspernatur molestias magnam dicta nulla incidunt voluptatem quaerat, vel illum dolore enim consectetur tempore dignissimos obcaecati dolores quia praesentium quisquam mollitia, nobis sequi dolor culpa eos laudantium maxime. Officiis facilis id similique repellendus! Quidem sunt inventore fuga optio, possimus rem architecto maiores autem voluptatum eaque repudiandae facere, tenetur id amet recusandae consequuntur non numquam eius error in praesentium. Perspiciatis harum quasi nisi distinctio, explicabo ullam hic libero corporis qui velit error pariatur enim neque facere molestias natus repellendus, quibusdam aliquid deleniti ex delectus, minus quia repudiandae suscipit? Saepe, minima!
+                            </div>
+                            <h3 class="item__title">05 FAQ</h3>
+                            <div class="text-content">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis inventore voluptates corrupti ipsum vitae earum sint laudantium voluptas debitis officia sunt sequi ullam praesentium non aut, maiores tempore ducimus accusamus perspiciatis! Distinctio ducimus maxime eveniet voluptatibus iste iure amet et odit corrupti magni perferendis expedita assumenda dolor asperiores doloribus, in eius suscipit dolorum modi velit. Molestiae labore adipisci in neque ipsam expedita facere cupiditate nisi incidunt, exercitationem tempore asperiores! Dicta, sint et voluptate pariatur ut amet nobis libero, illum vero, placeat molestias mollitia neque nulla magnam ipsum animi ipsa porro temporibus odit doloribus autem enim. Nulla, iure dolores alias adipisci vitae, laboriosam laborum culpa at necessitatibus cupiditate doloremque commodi assumenda, recusandae quo facere eius repellat quam provident sequi? Aut voluptatum ex dolorum ducimus ratione, blanditiis natus corrupti provident nam quam laudantium omnis soluta expedita dicta, obcaecati reprehenderit aspernatur nostrum asperiores hic itaque tempora, rerum voluptatem. Impedit odit nihil itaque? Officia fugit quibusdam nobis, eos velit blanditiis sequi sit quaerat cupiditate eligendi fuga soluta tenetur atque natus maxime quam assumenda dolorem cum consequuntur vitae in ab eius? Ea doloribus illo facilis molestias itaque iusto minus consequatur totam vitae qui sed delectus officiis dicta asperiores optio aliquam, blanditiis dolor enim minima? Itaque autem temporibus hic aliquid numquam debitis rerum iure expedita vitae harum mollitia nobis eligendi maxime dolores, voluptas odit, voluptatum necessitatibus est delectus nisi commodi dolorem iusto ex id! Accusantium necessitatibus modi doloremque iure quae! Sequi sint ullam in ex magnam eos, corrupti adipisci suscipit blanditiis eligendi vero cupiditate, voluptate ratione libero, recusandae rem totam eius aspernatur. Dolorum dignissimos omnis voluptatibus deleniti voluptas minus quos modi repellendus natus laborum voluptate earum vitae dicta numquam aliquid autem soluta, nostrum quibusdam! Doloremque asperiores laboriosam delectus ad, voluptas sunt, fugiat similique earum iusto impedit perspiciatis dolore excepturi possimus dignissimos aliquid, quia mollitia nobis quas?
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tabs" class="desktop">
                         <ul>
                             <li><a href="#tabs-1">01 Мой файл</a></li>
                             <li><a href="#tabs-2">02 Видео 1х1</a></li>
@@ -476,7 +662,7 @@
                         <div id="tabs-5">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis inventore voluptates corrupti ipsum vitae earum sint laudantium voluptas debitis officia sunt sequi ullam praesentium non aut, maiores tempore ducimus accusamus perspiciatis! Distinctio ducimus maxime eveniet voluptatibus iste iure amet et odit corrupti magni perferendis expedita assumenda dolor asperiores doloribus, in eius suscipit dolorum modi velit. Molestiae labore adipisci in neque ipsam expedita facere cupiditate nisi incidunt, exercitationem tempore asperiores! Dicta, sint et voluptate pariatur ut amet nobis libero, illum vero, placeat molestias mollitia neque nulla magnam ipsum animi ipsa porro temporibus odit doloribus autem enim. Nulla, iure dolores alias adipisci vitae, laboriosam laborum culpa at necessitatibus cupiditate doloremque commodi assumenda, recusandae quo facere eius repellat quam provident sequi? Aut voluptatum ex dolorum ducimus ratione, blanditiis natus corrupti provident nam quam laudantium omnis soluta expedita dicta, obcaecati reprehenderit aspernatur nostrum asperiores hic itaque tempora, rerum voluptatem. Impedit odit nihil itaque? Officia fugit quibusdam nobis, eos velit blanditiis sequi sit quaerat cupiditate eligendi fuga soluta tenetur atque natus maxime quam assumenda dolorem cum consequuntur vitae in ab eius? Ea doloribus illo facilis molestias itaque iusto minus consequatur totam vitae qui sed delectus officiis dicta asperiores optio aliquam, blanditiis dolor enim minima? Itaque autem temporibus hic aliquid numquam debitis rerum iure expedita vitae harum mollitia nobis eligendi maxime dolores, voluptas odit, voluptatum necessitatibus est delectus nisi commodi dolorem iusto ex id! Accusantium necessitatibus modi doloremque iure quae! Sequi sint ullam in ex magnam eos, corrupti adipisci suscipit blanditiis eligendi vero cupiditate, voluptate ratione libero, recusandae rem totam eius aspernatur. Dolorum dignissimos omnis voluptatibus deleniti voluptas minus quos modi repellendus natus laborum voluptate earum vitae dicta numquam aliquid autem soluta, nostrum quibusdam! Doloremque asperiores laboriosam delectus ad, voluptas sunt, fugiat similique earum iusto impedit perspiciatis dolore excepturi possimus dignissimos aliquid, quia mollitia nobis quas?
                         </div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -484,7 +670,7 @@
 
     <footer class="footer">
         <div class="container">
-            <div class="footer__inner">
+            <div class="footer__inner desktop">
                 <div class="logo">
                     <img src="img/footer-logo.png" alt="">
                 </div>
@@ -534,11 +720,52 @@
                                 <a href="#"><img src="img/facebook.png" alt=""></a>
                                 <a href="#"><img src="img/ok.png" alt=""></a>
                                 <a href="#"><img src="img/twitter.png" alt=""></a>
-                                <img src="img/youtube.png" alt="">
-                                <img src="img/inst.png" alt="">
+                                <a href="#"><img src="img/youtube.png" alt=""></a>
+                                <a href="#"><img src="img/inst.png" alt=""></a>
                             </div>
                             <div class="not-afera">Не является публичной офертой</div>
                         </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mobile">
+                <div class="upper">
+                    <div class="logo">
+                        <img src="img/logo.png" alt="">
+                    </div>    
+                    <div class="title">Ретрофит<br>комплекты</div>
+                </div>
+                <div class="lower">
+                    <div class="catalog__filter mobile ui-widget-content" id="accordion-resizer3">
+                        <div class="footer__accordeon" id="accordion3">
+                            <h3 class="header">Адреса</h3>
+                            <div>
+                                <div class="text">
+                                    <div class="bold">Российская Федерация</div> 214005, Смоленск ул. Свердлова, 24, офис 3/1 8.00-17.00 по МСК
+                                </div>
+                                <div class="text">
+                                    <div class="bold">Республика Беларусь</div> 220040, Минск, ул. Сурганова, 88, помещение 3, офис 1 9.00-18.00 по МСК
+                                </div>
+                            </div>
+                            <h3 class="header">Связаться</h3>
+                            <div>
+                                <div class="text">
+                                    +7 (800) 350-74-04<br>info@sitek-group.ru
+                                </div>
+                                <div class="text">
+                                    +375 (17) 217-00-15<br>info@sitek-group.ru
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social">
+                        <a href="#"><img src="img/vk.png" alt=""></a>
+                        <a href="#"><img src="img/facebook.png" alt=""></a>
+                        <a href="#"><img src="img/ok.png" alt=""></a>
+                        <a href="#"><img src="img/twitter.png" alt=""></a>
+                        <a href="#"><img src="img/youtube.png" alt=""></a>
+                        <a href="#"><img src="img/inst.png" alt=""></a>
                     </div>
                 </div>
             </div>
@@ -567,6 +794,7 @@
     
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider.js"></script>
+    <script src="js/accordion.js"></script>
     <script src="js/clear-search.js"></script>
     <script src="js/tabs.js"></script>
     <script src="js/modal.js"></script>
