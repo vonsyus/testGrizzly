@@ -60,7 +60,12 @@
 @white: #fff;
 @black: #333333;
 @grey: #999999;
+@green: #00B5BD;
+@green-bg: rgba(0, 181, 189, 0.2);
+@orange: #F7B512;
+@orange-bg: rgba(247, 181, 18, 0.2);
 @light-grey: #CCCCCC;
+@footer-bg: #f5f5f5;
 @hover-btn: #003F90;
 @side-bar-hover: rgba(12, 77, 162, 0.07);
 @side-bar-btn: rgba(12, 77, 162, 0.2);
@@ -95,7 +100,7 @@ a {
     }
 }
 
-.section {
+.section, .footer {
     padding-top: 60px;
     .container {
         max-width: 1170px;
@@ -103,7 +108,9 @@ a {
     }
 }
 
-
+.footer {
+    padding-top: 0;
+}
 
 .owl-carousel {
     .owl-dots {
@@ -127,6 +134,36 @@ a {
             background-color: @blue;
         }
     }
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 6px;
+    font-size: 14px;
+    padding: 4px 10px;
+    margin-right: 7px;
+    margin-bottom: 6px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.blue {
+    color: @blue;
+    background-color: @side-bar-btn;
+}
+
+.green {
+    color: @green;
+    background-color: @green-bg;
+}
+
+.orange {
+    color: @orange;
+    background-color: @orange-bg;
 }
 
 /* header */
@@ -710,26 +747,7 @@ a {
                 .card__tags {
                     display: flex;
                     align-items: center;
-        
-                    .tag {
-                        display: flex;
-                        align-items: center;
-                        justify-content: space-between;
-                        background-color: @side-bar-btn;
-                        border-radius: 6px;
-                        font-size: 14px;
-                        padding: 4px 10px;
-                        color: @blue;
-                        margin-right: 7px;
-        
-                        &:first-child {
-                            margin-left: 22px;
-                        }
-        
-                        &:last-child {
-                            margin-right: 0;
-                        }
-                    }
+                    padding: 0px 20px;
                 }
         
                 &:hover {
@@ -746,6 +764,8 @@ a {
 .sec3 {
     background-color: @side-bar-hover;
     margin-top: 90px;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
 
     .ways {
         .ways__title {
@@ -758,6 +778,8 @@ a {
 
         .get-info {
             position: relative;
+            box-shadow: 0px 0px 6px rgba(171, 171, 175, 0.2);
+            border-radius: 15px;
 
             .ui-tabs {
                 padding: 0;                   
@@ -851,6 +873,8 @@ a {
                 display: flex;
 
                 .text-content {
+                    margin-right: 84px;
+
                     .item {
                         font-size: 16px;
                         line-height: 150%;
@@ -894,7 +918,194 @@ a {
                         }
                     }
                 }
+
+                .slider {
+                    position: relative;
+                    max-width: 560px;
+
+                    .slider__nav {
+                        
+                        #left3 {
+                            position: absolute;
+                            top: 35%;
+                            left: -9%;
+                            cursor: pointer;
+                        }
+
+                        #right3 {
+                            position: absolute;
+                            top: 35%;
+                            left: 101%;
+                            transform: rotate(180deg);
+                            cursor: pointer;
+                        }
+                    }
+
+                    .file {
+                        width: 270px;
+                        height: 396px;
+                        border-radius: 15px;
+                        border: 1px solid rgba(171, 171, 175, 0.45);
+                        transition: all .2s;
+                        
+                        &:hover {
+                            box-shadow: 0px 0px 10px rgba(173, 171, 175, 0.65);
+                            transition: all .2s;
+                        }
+                    }
+
+                    .file__title {
+                        padding: 20px 20px 10px 20px;
+                        .bold();
+                        line-height: 130%;
+                    }
+
+                    .file__description {
+                        .italic();
+                        font-size: 14px;
+                        line-height: 150%;
+                        padding: 0 20px 30px 20px;
+                    }
+
+                    .file__tags {
+                        display: flex;
+                        flex-wrap: wrap;
+                        padding: 0px 20px;
+                    }
+
+                    .owl-dots {
+                        margin-top: 45px;
+                    }
+                }
             }            
+        }
+    }
+}
+
+/* footer */
+.footer {
+    background-color: @footer-bg;
+
+    .footer__inner {
+        display: flex;
+        padding-top: 44px;
+        padding-bottom: 28px;
+
+        .logo {
+            margin-right: 54px;
+        }
+
+        .upper {
+            display: flex;
+            border-bottom: 1px solid @light-grey;
+
+            .information__title {
+                font-size: 26px;
+                text-transform: uppercase;
+                line-height: 100%;
+                .bold();
+            }
+
+            .information__links {
+                margin-left: 60px;
+                margin-top: 3px;
+
+                .link {
+                    .bold();
+                    line-height: 100%;
+                    text-transform: uppercase;
+                    color: @black;
+                    margin-right: 40px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    &:first-child {
+                        position: relative;
+
+                        &:after {
+                            content: '|';
+                            margin-left: 18px;
+                            font-size: 20px;
+                            color: @light-grey;
+                            position: absolute;
+                            cursor: default;
+                            .reg();
+                            top: -1%;
+                        }
+                    }
+                }
+
+                .grey {
+                    color: @grey;   
+                }
+            }
+
+            .information__phones {
+                .phones__item {
+                    width: 230px;
+                    text-align: right;
+                    margin-top: -3px;
+                    margin-bottom: 12px;
+                    margin-left: 37px;
+                    font-size: 20px;
+                    .bold();
+
+                    .small {
+                        display: block;
+                        font-size: 14px;
+                        color: @grey;
+                        .reg();
+                    }
+                }
+            }
+        }
+
+        .lower {
+            display: flex;
+            margin-top: 30px;
+
+            .country {
+                margin-right: 70px;
+            }
+
+            .country .text-content {
+                width: 290px;
+            }
+
+            .text-content {
+                font-size: 14px;
+                line-height: 150%;
+                margin-bottom: 20px;
+
+                .bold {
+                    .bold();
+                }
+
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            .social {
+                margin-left: 266px;
+                margin-top: 50px;
+
+                .social__logos {
+                    width: 246px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+
+                .not-afera {
+                    margin-top: 68px;
+                    font-size: 14px;
+                    color: @grey;
+                    text-align: right;
+                }
+            }
         }
     }
 }

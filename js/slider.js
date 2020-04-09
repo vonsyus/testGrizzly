@@ -30,4 +30,20 @@ $(document).ready(function() {
     $('#right2').click(function() {
         owl2.trigger('next.owl.carousel');
     });
+
+    let owl3 = $('#owl3');
+    owl3.owlCarousel({
+        items: 2,
+        loop: false,
+        margin: 20,
+        slideBy: 2
+    });
+
+    $('#left3').click(function() {
+        owl3.trigger('prev.owl.carousel');
+    });
+
+    $('#right3').click(function() {
+        owl3.trigger('next.owl.carousel');
+    });
 });
