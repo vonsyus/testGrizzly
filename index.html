@@ -39,7 +39,7 @@
                         <div class="free-call">звонок бесплатный</div>
                     </div>
 
-                    <div class="consultation-btn">Консультация</div>
+                    <div class="consultation-btn" id="consultation">Консультация</div>
                 </div>
             </div>
             <div class="lower-header">
@@ -534,8 +534,8 @@
                                 <a href="#"><img src="img/facebook.png" alt=""></a>
                                 <a href="#"><img src="img/ok.png" alt=""></a>
                                 <a href="#"><img src="img/twitter.png" alt=""></a>
-                                <a href="#"><img src="img/youtube.png" alt=""></a>
-                                <a href="#"><img src="img/inst.png" alt=""></a>
+                                <img src="img/youtube.png" alt="">
+                                <img src="img/inst.png" alt="">
                             </div>
                             <div class="not-afera">Не является публичной офертой</div>
                         </div>
@@ -545,10 +545,31 @@
         </div>
     </footer>
 
+    <div id="modal" class="modal">
+        <div class="modal__content">
+            <div class="close">
+                <img src="img/close.png" alt="">
+            </div>
+            <div class="modal__title">Получить консультацию</div>
+            <form action="#" class="modal__form">
+                <div class="wrapper">
+                    <label for="" class="label fio__label">Ваши ФИО:</label>
+                    <input type="text">
+                </div>
+                <div class="wrapper">
+                    <label for="" class="label message__label">Ваше сообщение:</label>
+                    <textarea name="" id="" cols="80" rows="10"></textarea>
+                </div>
+                <button class="send">Отправить</button>
+            </form>
+        </div>
+      </div>
+    
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/slider.js"></script>
     <script src="js/clear-search.js"></script>
     <script src="js/tabs.js"></script>
+    <script src="js/modal.js"></script>
     
 </body>
 </html>

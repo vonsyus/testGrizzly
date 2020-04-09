@@ -45,6 +45,104 @@ a {
   max-width: 1140px;
   margin: 0 auto;
 }
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 30;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.modal__content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  margin-top: 3%;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  border-radius: 10px;
+}
+.modal__content .modal__title {
+  text-align: center;
+  font-family: 'Fira Sans Bold', sans-serif;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+.modal__content .modal__form .wrapper {
+  position: relative;
+}
+.modal__content .modal__form .wrapper .label {
+  position: absolute;
+  color: #999999;
+  font-size: 13px;
+  background: #fff;
+  padding: 0px 5px;
+  left: 2%;
+}
+.modal__content .modal__form .wrapper .fio__label {
+  top: -15%;
+}
+.modal__content .modal__form .wrapper .message__label {
+  top: -4%;
+}
+.modal__content .modal__form .wrapper input {
+  display: block;
+  width: 100%;
+  border: 1px solid #CCCCCC;
+  font-size: 16px;
+  padding: 7px 5px;
+  outline: none;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #333333;
+}
+.modal__content .modal__form .wrapper textarea {
+  resize: none;
+  border: 1px solid #CCCCCC;
+  border-radius: 5px;
+  font-family: 'Fira Sans Regular', sans-serif;
+  font-size: 16px;
+  padding: 7px 5px;
+  outline: none;
+  color: #333333;
+}
+.modal__content .modal__form .send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 152px;
+  height: 46px;
+  border: none;
+  background-color: #0C4DA2;
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.2s;
+  margin-right: 6px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: 'Fira Sans Regular', sans-serif;
+  outline: none;
+  margin-top: 20px;
+}
+.modal__content .modal__form .send:hover {
+  transition: all 0.2s;
+  background-color: #003F90;
+  cursor: pointer;
+}
+.close {
+  float: right;
+}
+.close img {
+  width: 10px;
+}
+.close:hover {
+  cursor: pointer;
+}
 .section,
 .footer {
   padding-top: 60px;
@@ -325,7 +423,6 @@ a {
   position: absolute;
   top: 43%;
   left: 3%;
-  z-index: 100;
 }
 .wrapper .right-side .slider #left1:hover {
   cursor: pointer;
@@ -335,7 +432,6 @@ a {
   top: 43%;
   left: 94.3%;
   transform: rotate(180deg);
-  z-index: 100;
 }
 .wrapper .right-side .slider #right1:hover {
   cursor: pointer;

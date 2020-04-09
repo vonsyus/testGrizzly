@@ -100,6 +100,119 @@ a {
     }
 }
 
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 30;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+.modal__content {
+    background-color: #fefefe;
+    margin: 0 auto;
+    margin-top: 3%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 30%;
+    border-radius: 10px;
+
+    .modal__title {
+        text-align: center;
+        .bold();
+        text-transform: uppercase;
+        font-size: 20px;
+        margin-bottom: 30px;
+    }
+
+    .modal__form {
+
+        .wrapper {
+            position: relative;
+
+            .label {
+                position: absolute;
+                color: @grey;
+                font-size: 13px;
+                background: #fff;
+                padding: 0px 5px;
+                left: 2%;
+            }
+
+            .fio__label {
+                top: -15%;
+            }
+
+            .message__label {
+                top: -4%;
+            }
+    
+            input {
+                display: block;
+                width: 100%;
+                border: 1px solid @light-grey;
+                font-size: 16px;
+                padding: 7px 5px;
+                outline: none;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                color: @black;
+            }
+
+            textarea {
+                resize: none;                
+                border: 1px solid @light-grey;
+                border-radius: 5px;
+                .reg();
+                font-size: 16px;
+                padding: 7px 5px;
+                outline: none;
+                color: @black;
+            }
+        } 
+        
+        .send {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 152px;
+            height: 46px;
+            border: none;
+            background-color: @blue;
+            color: @white;
+            border-radius: 6px;
+            transition: all .2s;
+            margin-right: 6px;
+            text-transform: uppercase;
+            font-size: 14px;
+            .reg();
+            outline: none;
+            margin-top: 20px;
+
+            &:hover {
+                transition: all .2s;
+                background-color: @hover-btn;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.close {
+    float: right;
+    img {
+        width: 10px;
+    }
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
 .section, .footer {
     padding-top: 60px;
     .container {
@@ -424,7 +537,6 @@ a {
                 position: absolute;
                 top: 43%;
                 left: 3%;
-                z-index: 100;
     
                 &:hover {
                     cursor: pointer;
@@ -436,7 +548,6 @@ a {
                 top: 43%;
                 left: 94.3%;
                 transform: rotate(180deg);
-                z-index: 100;
     
                 &:hover {
                     cursor: pointer;
